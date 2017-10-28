@@ -71,8 +71,7 @@ int main(void)
     P2SEL0 &= ~BIT(7);
     P2SEL1 &= ~BIT(7); //conf as GPIO
     P2DIR &= ~BIT(7); // make inputs
-    P2REN |= BIT(7); //  enable pull resistors
-    P2OUT |= BIT(7); //  pull-up
+
     int row = 0;
     
     while(1)
